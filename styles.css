@@ -1,0 +1,200 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Smooth scroll when a link is clicked */
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Header */
+header {
+    background-color: #333333;
+    color: white;
+    padding: 10px 20px;
+    position: sticky; /* Make the header sticky */
+    top: 0; /* Stick to the top of the viewport */
+    z-index: 1000; /* Ensure it stays above other content */
+    width: 100%; /* Ensure the header takes the full width */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+}
+
+/* Intro Section */
+#intro {
+    position: relative;
+    height: 100vh; /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.cover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/maze-img.jpg'); /* Path to your background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1; /* Ensure background image is behind the content */
+}
+
+.content {
+    margin-top: 150PX;
+    position: relative;
+    text-align: center;
+    color: white;
+    z-index: 2; /* Ensure content is above the background image */
+}
+
+.content h1 {
+    margin: 20px 0;
+    font-size: 2.5em; /* Adjust size as needed */
+    color: #fff;
+}
+
+p {
+    font-size: 1.2em;
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #333333;
+    background-color: #98FF98;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    background-color: #8EE4A8;
+}
+
+/* Features Section */
+#features {
+    padding: 60px 20px;
+    background-color: #f4f4f4; /* Light background for the features section */
+    text-align: center;
+}
+
+.feature {
+    margin-bottom: 40px;
+    opacity: 0;
+    transform: translateY(20px); /* Slightly shift up for effect */
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Fade-in effect */
+.feature.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.feature-image {
+    width: 100%; /* Adjust width as needed */
+    max-width: 400px; /* Maximum width */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.feature-image.zoom {
+    transform: scale(1.1); /* Zoom in by 10% */
+}
+
+.feature-name {
+    font-size: 2em;
+    margin: 20px 0;
+    color: #333; /* Dark text for readability */
+}
+
+.feature-description {
+    font-size: 1.2em;
+    color: #333; /* Darker text for readability */
+    margin: 0 auto;
+    max-width: 600px; /* Maximum width for readability */
+}
+
+/* About Section Styling */
+#about {
+    padding: 60px 20px;
+    background-color: #f9f9f9; /* Light background to differentiate from other sections */
+    text-align: center;
+}
+
+.about-content {
+    max-width: 800px; /* Limit width for readability */
+    margin: 0 auto;
+}
+
+h2, h3 {
+    color: #333; /* Dark color for headings */
+}
+
+p {
+    font-size: 1.2em;
+    color: #666; /* Slightly lighter color for text */
+    line-height: 1.6; /* Improve readability */
+    margin-bottom: 20px;
+}
+
+a {
+    color: #007bff; /* Bootstrap primary color for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; /* Underline links on hover */
+}
+
+ul.team-members {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul.team-members li {
+    margin-bottom: 10px;
+}
+
+ul.team-members a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+ul.team-members a:hover {
+    text-decoration: underline;
+}
+
+.about-content h1 {
+    font-size: 3.5em;
+    padding-bottom: 30px;
+    color: #333333;
+}
