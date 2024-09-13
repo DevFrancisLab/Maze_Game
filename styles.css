@@ -37,6 +37,7 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: #575757;
+    text-decoration: none;
 }
 
 /* Intro Section */
@@ -95,6 +96,7 @@ p {
 
 .cta-button:hover {
     background-color: #8EE4A8;
+    text-decoration: none;
 }
 
 /* Features Section */
@@ -197,4 +199,16 @@ ul.team-members a:hover {
     font-size: 3.5em;
     padding-bottom: 30px;
     color: #333333;
+}
+
+/* Download Page Styles */
+#download {
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.download-content {
+    max-width: 800px;
+    margin: 0 auto;
 }
